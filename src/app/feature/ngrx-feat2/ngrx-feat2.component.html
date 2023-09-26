@@ -1,5 +1,5 @@
 <div>
-  <ul>
-    <li>Fazer Café</li>
+  <ul *ngFor="let todo of todo$ | async">
+    <li *ngIf="todo">{{ todo.description }}</li>
   </ul>
 </div>

@@ -19,8 +19,8 @@ const routes: Routes = [
   {
     path: "",
     loadChildren: () =>
-      import("../app/feature/ngrx-feat2/ngrx-feat2.module").then(
-        (m) => m.NgrxFeat2Module
+      import("../app/feature/ngrx-feat1/ngrx-feat1.module").then(
+        (m) => m.NgrxFeat1Module
       ),
   },
 ];
@@ -29,4 +29,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

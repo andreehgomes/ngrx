@@ -13,5 +13,6 @@ import { NgrxFeat2Component } from "./ngrx-feat2.component";
     MatButtonModule,
     MatTableModule,
   ],
+  exports: [NgrxFeat2Component],
 })
 export class NgrxFeat2Module {}

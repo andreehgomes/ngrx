@@ -1,8 +1,13 @@
 <div class="content">
   <h3>TODO!</h3>
-  <mat-form-field class="example-full-width">
-    <mat-label>Task</mat-label>
-    <input matInput />
-  </mat-form-field>
-  <button mat-button color="primary">Primary</button>
+
+  <form>
+    <mat-form-field class="example-full-width">
+      <mat-label>Task</mat-label>
+      <input name="description" matInput [(ngModel)]="description" />
+    </mat-form-field>
+  </form>
+  <button (click)="AddTodo()" mat-button color="primary">Primary</button>
+
+  <app-ngrx-feat2></app-ngrx-feat2>
 </div>
